@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Todo App `React JS`
+- Snapshot:
+![image](https://user-images.githubusercontent.com/97510701/149350019-8ec5dd02-a2c7-4759-b957-285e7f8f87b4.png)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
