@@ -1,0 +1,109 @@
+.task-item {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #777;
+    overflow: hidden;
+}
+
+/* My checkbox */
+.checkbox {
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 40px;
+    background-color: #fff;
+    z-index: 100;
+}
+
+
+/* Hide the browser's default checkbox */
+.checkbox input {
+    margin: 0;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkbox .checkmark {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: #eee;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox input:checked ~ .checkmark {
+    background-color: red;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox .checkmark:after {
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+
+.task-info {
+    flex: 1;
+    max-width: 220px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 5s;
+}
+
+.task-info::-webkit-scrollbar {
+    width: 0px;
+}
+
+.task-info[data-checked=checked] {
+    text-decoration: line-through;
+}
+
+
+.task-time {
+    text-align: right;
+    white-space: nowrap;
+    width: 68px;
+    padding-left: 8px;
+    background-color: #fff;
+    z-index: 100;
+}
