@@ -2,11 +2,7 @@
   "name": "todo-list-1",
   "version": "0.1.0",
   "private": true,
-<<<<<<< HEAD
-  "homepage": "https://nmcprojects.github.io/react-todo-list-1/",
-=======
   "homepage": "https://nmcprojects.github.io/react/todo-list-1",
->>>>>>> origin/main
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
